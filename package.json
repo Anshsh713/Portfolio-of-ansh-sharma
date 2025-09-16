@@ -1,18 +1,16 @@
 {
-  "homepage": "https://Anshsh713.github.io/Portfolio-of-ansh-sharma"
-,
+  "homepage": "https://Anshsh713.github.io/Portfolio-of-ansh-sharma",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "emailjs-com": "^3.2.0",
