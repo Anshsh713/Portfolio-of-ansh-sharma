@@ -1,0 +1,79 @@
+@import url("../../index.css");
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* allow wrapping on small screens */
+    position: relative; /* fixed can be used if you want it always at bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--text1);
+    color: var(--text2);
+    padding: 10px 30px;
+    gap: 10px; /* space between items when wrapped */
+    font-family: "Poppins", sans-serif;
+}
+
+footer i {
+    margin: 0 10px;
+    font-size: 16px;
+    color: var(--text2);
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: #f39c12;
+}
+
+footer .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    footer {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .text {
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer i {
+        margin: 5px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    footer {
+        padding: 8px 15px;
+    }
+
+    footer .text p {
+        font-size: 13px;
+    }
+
+    footer i {
+        font-size: 20px;
+        margin: 5px;
+    }
+}

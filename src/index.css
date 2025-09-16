@@ -1,0 +1,72 @@
+:root{ --backgroundcolor:#EAE2B7 ;--backgroundcontact:#ffd277;--backgroundcontact2:#f0c060; --input:#fff8e6; --inputhover:#fff3d1;  ;--hello:#EAE2B7 ;--text1: #003049; --text2: white; --hovering: #FCBF49; --colour1: #F77F00; --colour2: #d62828; --skill: white; --extra: white;}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Hide scrollbar but allow scrolling */
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  overflow: -moz-scrollbars-none; /* older Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+:root {
+  --gradient-light: linear-gradient(
+    180deg,
+    var(--backgroundcolor),
+    var(--hovering),
+    var(--colour1)
+  );
+  --gradient-dark: linear-gradient(
+    180deg,
+    #1a1a1a,  
+    #2e2a1e,   
+    #444444 
+  );
+}
+
+body {
+    scrollbar-width: none;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--text2);
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    --gradient: var(--gradient-light);
+    background: var(--gradient);
+    background-size: 200% 200%;
+    animation: gradientAnimation 4s ease infinite;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body.dark-mode {
+  
+    --colour1: #CC6600;
+    --colour2: #a61f1f;
+    --backgroundcolor: #2e2a1e;
+    --text1: #90c2e7;
+    --text2: white;
+    --hovering: #e3a82e;
+    --skill:#2e2a1e;
+    --extra:#444444;
+    --hello: #444444;
+    --backgroundcontact:#8c6b3e;
+    --backgroundcontact2:#73603d;
+    --gradient: var(--gradient-dark);
+    --input:#2b2b2b;
+    --inputhover:#1f1f1f;
+    color: var(--text2);
+    background-size: 200% 200%;
+    animation: gradientAnimation 4s ease infinite;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

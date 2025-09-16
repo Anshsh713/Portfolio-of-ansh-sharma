@@ -1,0 +1,236 @@
+@import url("../../index.css");
+
+/* ---------------- Desktop ---------------- */
+.skill {
+  padding: 4rem 2rem;
+  background: var(--skill);
+  color: var(--text1);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.skill-header h1 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  color: var(--text1);
+  position: relative;
+  display: inline-block;
+}
+
+.skill-header h1::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 3px;
+  margin: 0.5rem auto 0;
+  background: var(--colour1);
+  border-radius: 5px;
+}
+
+.skill-content p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: var(--text1);
+  line-height: 2;
+}
+
+.skill-box {
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+}
+
+.skill-box1,
+.skill-box2,
+.skill-box3,
+.skill-box4 {
+  height: 260px;
+  background: var(--extra);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-box1:hover,
+.skill-box2:hover,
+.skill-box3:hover,
+.skill-box4:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+.skill-box h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #f39c12;
+}
+
+/* --- Languages Section --- */
+.languages {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.languages::-webkit-scrollbar {
+  height: 8px;
+}
+.languages::-webkit-scrollbar-track {
+  background: transparent;
+}
+.languages::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.languages::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.language-items {
+  flex: 0 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+.language-items img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.language-items p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text1);
+}
+
+/* ---------------- Tablet ---------------- */
+@media (max-width: 992px) {
+  .skill {
+    padding: 3rem 2rem;
+  }
+  .skill-header h1 {
+    font-size: 2.5rem;
+  }
+  .skill-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+  .skill-box {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    height: auto;
+  }
+  .skill-box1,
+  .skill-box2,
+  .skill-box3,
+  .skill-box4 {
+    height: 240px;
+    padding: 1.5rem;
+  }
+  .skill-box h2 {
+    font-size: 1.5rem;
+  }
+  .languages {
+    gap: 1.5rem;
+  }
+  .language-items img {
+    width: 50px;
+  }
+  .language-items p {
+    font-size: 14px;
+  }
+}
+
+/* ---------------- Mobile ---------------- */
+@media (max-width: 768px) {
+  .skill {
+    padding: 2rem 1rem;
+  }
+  .skill-header h1 {
+    font-size: 2rem;
+  }
+  .skill-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .skill-box {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    height: auto;
+  }
+  .skill-box1,
+  .skill-box2,
+  .skill-box3,
+  .skill-box4 {
+    height: auto;
+    padding: 1.2rem;
+  }
+  .skill-box h2 {
+    font-size: 1.3rem;
+  }
+  .languages {
+    gap: 1rem;
+  }
+  .language-items img {
+    width: 40px;
+  }
+  .language-items p {
+    font-size: 13px;
+  }
+}
+
+/* ---------------- Small Mobile ---------------- */
+@media (max-width: 480px) {
+  .skill-header h1 {
+    font-size: 1.8rem;
+  }
+  .skill-content p {
+    font-size: 0.95rem;
+  }
+  .skill-box h2 {
+    font-size: 1.2rem;
+  }
+  .language-items img {
+    width: 35px;
+  }
+  .language-items p {
+    font-size: 12px;
+  }
+}
+/* Work image styling */
+.work img {
+  width: 250px;   /* default desktop size */
+  height: auto;
+  margin-right: 100px;
+  display: block;
+  margin: 0 auto; /* center the image */
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .work img {
+    width: 100px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .work img {
+    width: 100px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .work img {
+    width: 100px;
+  }
+}

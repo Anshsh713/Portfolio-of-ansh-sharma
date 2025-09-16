@@ -1,0 +1,134 @@
+.projects-container {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  overflow-x: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-text{
+  text-align: center;
+  color: var(--text1);
+}
+.project-text h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.project-text p{
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+.projects-grid {
+  display: flex; /* ✅ Switch to flex for better control */
+  gap: 1.2rem;
+  min-width: max-content; /* ✅ prevents cards from stretching too much */
+  padding-bottom: 1rem;
+}
+
+.project-card {
+  flex: 0 0 300px; /* ✅ fixed smaller width */
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  background: var(--hello, #fff);
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.project-image img {
+  width: 100%;
+  height: 325px; /* ✅ smaller height */
+    object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* Details Section */
+.project-details {
+  padding: 1rem;
+  text-align: left;
+}
+
+.project-details h2 {
+  font-size: 1.3rem; /* ✅ smaller title */
+  font-weight: bolder;
+  margin-bottom: 0.4rem;
+  color: var(--text1, #222);
+}
+
+.project-details p {
+  font-size: 0.8rem;
+  color: var(--text1);
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.tag {
+  background: #e6e6ff;
+  color: #333;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/* Links */
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.link a button {
+  padding: 0.3rem 0.7rem;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.link a button:hover {
+  background: #5548e0;
+}
+
+.link i {
+  color: var(--text2);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.link i:hover {
+  color: var(--text1);
+}
+
+/* Responsive: Make cards a bit wider on mobile so they're readable */
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 260px;
+  }
+}
