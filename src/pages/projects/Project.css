@@ -2,23 +2,27 @@
   padding: 3rem 2rem;
   max-width: 1200px;
   margin: auto;
-  overflow-x: auto; 
+  overflow-x: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.project-text{
+
+.project-text {
   text-align: center;
   color: var(--text1);
 }
-.project-text h1{
+
+.project-text h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-.project-text p{
+
+.project-text p {
   font-size: 1.2rem;
   margin-bottom: 4rem;
 }
+
 .projects-grid {
   display: flex; /* ✅ Switch to flex for better control */
   gap: 1.2rem;
@@ -47,7 +51,7 @@
 .project-image img {
   width: 100%;
   height: 325px; /* ✅ smaller height */
-    object-fit: cover;
+  object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
 }
@@ -129,6 +133,6 @@
 /* Responsive: Make cards a bit wider on mobile so they're readable */
 @media (max-width: 768px) {
   .project-card {
-    flex: 0 0 260px;
+    flex: 0 0 220px;
   }
 }

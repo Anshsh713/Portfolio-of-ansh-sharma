@@ -10,6 +10,7 @@ import react from "./languages/science.png";
 import mysql from "./languages/mysql.png";
 import github from "./languages/github.png";
 import work from "./languages/sorry.png";  
+import Tailwindcss from "./languages/Tailwind.png";
 const Skill = () => {
   const languages = [
     {img: js,name: "JavaScript"},
@@ -22,6 +23,7 @@ const Skill = () => {
     {img: css,name: "CSS"},
     {img: js,name: "JavaScript"},
     {img: react,name: "React"},
+    {img: Tailwindcss,name: "Tailwind"}
   ];
   const Database = [
     {img: mysql,name: "MySQL"},
