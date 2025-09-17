@@ -24,11 +24,13 @@
 }
 
 .projects-grid {
-  display: flex; /* ✅ Switch to flex for better control */
-  gap: 1.2rem;
-  min-width: max-content; /* ✅ prevents cards from stretching too much */
+  display: flex;
+  gap: 1rem;
+  scroll-snap-type: x mandatory; /* ✅ adds snapping while scrolling */
+  -webkit-overflow-scrolling: touch; /* ✅ makes scrolling smooth on iOS */
   padding-bottom: 1rem;
 }
+
 
 .project-card {
   flex: 0 0 300px; /* ✅ fixed smaller width */
@@ -130,9 +132,36 @@
   color: var(--text1);
 }
 
-/* Responsive: Make cards a bit wider on mobile so they're readable */
+/* Keep single row layout on small screens with horizontal scrolling */
 @media (max-width: 768px) {
+  .projects-grid {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto; /* ✅ enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* ✅ smooth snap effect */
+    -webkit-overflow-scrolling: touch; /* ✅ smooth scrolling on iOS */
+    padding-bottom: 1rem;
+  }
+
   .project-card {
-    flex: 0 0 220px;
+    flex: 0 0 80%; /* ✅ show ~80% width of screen per card */
+    max-width: 300px;
+    scroll-snap-align: start; /* ✅ snap each card nicely */
+    height: auto; /* ✅ adjust for smaller screens */
+  }
+
+  .project-image img {
+    height: auto; /* ✅ let height adjust naturally */
+    max-height: 250px;
+  }
+
+  /* Optional: hide ugly scrollbars */
+  .projects-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .projects-grid {
+    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
+
