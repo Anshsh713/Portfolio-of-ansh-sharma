@@ -11,7 +11,7 @@
   gap: 3rem;
 }
 
-/* ✅ Text Section */
+
 .contact-text {
   text-align: center;
   max-width: 1000px;
@@ -19,7 +19,7 @@
 }
 
 .contact-text h1 {
-  font-size: clamp(2rem, 5vw, 3rem); /* ✅ scales for all screens */
+  font-size: clamp(2rem, 5vw, 3rem); 
   color: var(--text1);
   margin-bottom: 1rem;
 }
@@ -38,14 +38,14 @@
   color: var(--text1);
 }
 
-/* ✅ Container */
+
 .contact-container {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
   background-color: var(--backgroundcontact);
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 3rem;
+  gap: 2rem;
   flex-wrap: wrap;
   max-width: 1300px;
   width: 100%;
@@ -53,7 +53,6 @@
   margin: 0 auto;
 }
 
-/* ✅ Info Section */
 .contact-info {
     border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -80,7 +79,6 @@
   color: var(--text1, #333);
 }
 
-/* ✅ Image Section */
 .contact-img img {
   max-width: 90%;
   height: auto;
@@ -89,13 +87,13 @@
   margin: 0 auto;
 }
 
-/* ✅ Form Section */
 .contact-inputs {
   flex: 1;
   min-width: 280px;
   display: flex;
   justify-content: center;
-  margin-top: 7rem;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .contact-inputs form {
@@ -106,7 +104,6 @@
   max-width: 500px;
 }
 
-/* ✅ Input Styles */
 .contact-inputs input,
 .contact-inputs textarea {
   padding: 0.9rem 1rem;
@@ -117,6 +114,7 @@
   background: var(--input);
   transition: all 0.3s ease;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  color: var(--textcolor);
 }
 
 .contact-inputs input:hover,
@@ -131,7 +129,6 @@
   transform: scale(1.02);
 }
 
-/* ✅ Button */
 .contact-inputs button {
   margin-top: 2rem;
   padding: 1rem;
@@ -150,7 +147,6 @@
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* ✅ Responsive Design */
 @media (max-width: 1024px) {
   .contact-container {
     gap: 2rem;
@@ -167,7 +163,8 @@
 
   .contact-info {
     max-width: 100%;
-    padding: 1.5rem;
+        border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   .contact-inputs form {
@@ -191,5 +188,63 @@
 
   .contact-inputs button {
     font-size: 0.9rem;
+  }
+  .contact-info{
+        border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .contact-form {
+    width: 100.7%;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .contact-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-text p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .contact-container {
+    padding: 0.5rem;
+  }
+
+  .contact-info {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1rem;
+    gap: 1.2rem;
+  }
+
+  .contact-head h1 {
+    font-size: 1.3rem;
+  }
+
+  .contact-head p {
+    font-size: 0.85rem;
+  }
+
+  .contact-img img {
+    max-width: 80%;
+  }
+
+  .contact-inputs form {
+    max-width: 100%;
+    gap: 0.5rem;
+  }
+
+  .contact-inputs input,
+  .contact-inputs textarea {
+    font-size: 0.8rem;
+  }
+
+  .contact-inputs button {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+    margin-top: 1.2rem;
   }
 }

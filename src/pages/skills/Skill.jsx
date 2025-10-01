@@ -14,7 +14,6 @@ import Tailwindcss from "./languages/Tailwind.png";
 const Skill = () => {
   const languages = [
     {img: js,name: "JavaScript"},
-    {img: python,name: "Python"},
     {img: c,name: "C"},
     {img: cpp,name: "C++"}
   ];
@@ -26,7 +25,6 @@ const Skill = () => {
     {img: Tailwindcss,name: "Tailwind"}
   ];
   const Database = [
-    {img: mysql,name: "MySQL"},
     {img: github,name: "GitHub"}
   ];
   return (

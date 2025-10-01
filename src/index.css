@@ -1,4 +1,4 @@
-:root{ --backgroundcolor:#EAE2B7 ;--backgroundcontact:#ffd277;--backgroundcontact2:#f0c060; --input:#fff8e6; --inputhover:#fff3d1;  ;--hello:#EAE2B7 ;--text1: #003049; --text2: white; --hovering: #FCBF49; --colour1: #F77F00; --colour2: #d62828; --skill: white; --extra: white;}
+:root{ --backgroundcolor:#EAE2B7 ;--backgroundcontact:#ffd277;--backgroundcontact2:#f0c060; --input:#fff8e6; --inputhover:#fff3d1;  ;--hello:#EAE2B7 ;--text1: #003049; --text2: white; --hovering: #FCBF49; --colour1: #F77F00; --colour2: #d62828; --skill: white; --extra: white; --textcolor : black;};
 *{
     box-sizing: border-box;
     margin: 0;
@@ -61,6 +61,7 @@ body.dark-mode {
     --gradient: var(--gradient-dark);
     --input:#2b2b2b;
     --inputhover:#1f1f1f;
+    --textcolor: white;
     color: var(--text2);
     background-size: 200% 200%;
     animation: gradientAnimation 4s ease infinite;

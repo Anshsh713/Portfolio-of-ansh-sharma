@@ -77,3 +77,29 @@ footer .text p {
         margin: 5px;
     }
 }
+/* Small Phones - 320px */
+@media (max-width: 320px) {
+    footer {
+        width: 100.6%;
+        padding: 6px 10px;
+        flex-direction: column; /* stack icons & text vertically */
+        gap: 8px;
+    }
+
+    footer i {
+        font-size: 18px; /* slightly smaller icons */
+        margin: 4px;
+    }
+
+    footer .text {
+        flex-direction: column; /* stack texts vertically */
+        align-items: center;
+        text-align: center;
+        gap: 4px;
+    }
+
+    footer .text p {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+}

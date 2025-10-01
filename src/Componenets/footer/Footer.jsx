@@ -50,7 +50,7 @@ function Footer() {
       </div>
       <div className="text">
         <p>Made by Ansh Sharma</p>
-        <p>Last Update at 18 September 2025</p>
+        <p>Last Update at 1st October 2025</p>
       </div>
     </footer>
   );

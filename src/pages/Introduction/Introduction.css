@@ -143,3 +143,47 @@
     font-size: 0.95rem;
   }
 }
+/* ---------------- Extra Small Mobile - 320px ---------------- */
+@media (max-width: 320px) {
+  .Content {
+    margin-top: 3rem;
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+  }
+
+  .about-me {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .about-me h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-me p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .links {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .links a {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .image img {
+    width: 200px; /* smaller image for tiny screens */
+    height: auto;
+  }
+
+  .Content::after {
+    height: 120px; /* adjust gradient for smaller screen */
+  }
+}
