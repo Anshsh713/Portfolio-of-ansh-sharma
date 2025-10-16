@@ -1,4 +1,4 @@
-:root{ --backgroundcolor:#EAE2B7 ;--backgroundcontact:#ffd277;--backgroundcontact2:#f0c060; --input:#fff8e6; --inputhover:#fff3d1;  ;--hello:#EAE2B7 ;--text1: #003049; --text2: white; --hovering: #FCBF49; --colour1: #F77F00; --colour2: #d62828; --skill: white; --extra: white; --textcolor : black;};
+:root{ --backgroundcolor:#EAE2B7 ;--backgroundcontact:#ffd277;--backgroundcontact2:#f0c060; --input:#fff8e6; --inputhover:#fff3d1;  ;--hello:#EAE2B7 ;--text1: #003049; --text2: white; --hovering: #FCBF49; --colour1: #F77F00; --colour2: #d62828; --skill: white; --extra: white; --textcolor : black;}
 *{
     box-sizing: border-box;
     margin: 0;
