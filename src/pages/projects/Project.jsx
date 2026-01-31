@@ -29,6 +29,14 @@ function Project() {
       about: "Track your Attendance with Time Table with React , Appwrite",
       tags: ["React", "Appwrite"],
     },
+    {
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr36ttPd0aAkmhg_MM2iKqEjMXFG0KF0GJoA&s",
+      Name: "Anime Tracking",
+      Github_link: "https://github.com/Anshsh713/AnimeTrackingApplication",
+      website_link: "https://github.com/Anshsh713/AnimeTrackingApplication",
+      about: "Track your Favorite anime shows with Anime Tracking easily",
+      tags: ["React", "Nodes.js", "express.js", "mongodb"],
+    },
   ];
 
   return (

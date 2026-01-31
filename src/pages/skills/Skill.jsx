@@ -32,6 +32,10 @@ const Skill = () => {
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6bebC_d4eWwJ-x9ntqDuT94TvOgumSBVWHg&s",
       name: "Node.js",
     },
+    {
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUlDx-wmb9kv0mAr6Ff4eG1y9dwUCJ9sYXPQ&s",
+      name: "Express.js",
+    },
   ];
   const Database = [
     { img: github, name: "GitHub" },
